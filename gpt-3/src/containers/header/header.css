@@ -1,5 +1,4 @@
 .gpt3__header {
-  color: #fff;
   display: flex;
 }
 
@@ -22,11 +21,10 @@
 
 .gpt3__header-content p {
   font-family: var(--font-family);
-  font-style: normal;
-  font-weight: normal;
   font-size: 20px;
   line-height: 27px;
   color: var(--color-text);
+
   margin-top: 1.5rem;
 }
 
@@ -40,37 +38,42 @@
   flex: 2;
   width: 100%;
   min-height: 50px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
   background: var(--color-footer);
   border: 2px solid var(--color-footer);
-  font-family: var(--font-family);
-  font-size: 20px;
-  line-height: 27px;
+  padding: 0 1rem;
   outline: none;
   color: #fff;
-  padding: 0 1rem;
-  border-radius: 5px 0px 0px 5px;
+
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .gpt3__header-content__input button {
   flex: 0.6;
   width: 100%;
   min-height: 50px;
-  background: #ff4820;
-  border-radius: 0px 5px 5px 0px;
   font-family: var(--font-family);
   font-weight: bold;
   font-size: 20px;
-  line-height: 27px;
+  line-height: 28px;
+  background: #ff4820;
+  border: 2px solid #ff4820;
+  padding: 0 1rem;
   color: #fff;
   cursor: pointer;
   outline: none;
-  padding: 0 1rem;
-  border: none;
+
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .gpt3__header-content__people {
-  width: 100%;
   display: flex;
+  width: 100%;
   justify-content: flex-start;
   align-items: center;
   margin-top: 2rem;
@@ -83,10 +86,12 @@
 
 .gpt3__header-content__people p {
   font-family: var(--font-family);
-  margin: 0 0 0 1rem;
+  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 38px;
+  margin: 0 0 0 1rem;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -125,5 +130,32 @@
 
   .gpt3__header-content__people {
     flex-direction: column;
+  }
+  .gpt3__header-content__people p {
+    margin: 0;
+  }
+
+  .gpt3__header-content__input input,
+  .gpt3__header-content__input button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .gpt3__header h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .gpt3__header p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .gpt3__header-content__input input,
+  .gpt3__header-content__input button {
+    font-size: 12px;
+    line-height: 16px;
   }
 }

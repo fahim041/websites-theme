@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { RiCloseLine, RiMenu3Line } from "react-icons/ri";
 import "./navbar.css";
+import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import logo from "../../assets/logo.svg";
+import { useState } from "react";
 
 const Menu = () => (
   <>
@@ -23,7 +23,7 @@ const Menu = () => (
   </>
 );
 
-function Navbar() {
+export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
@@ -36,7 +36,6 @@ function Navbar() {
           <Menu />
         </div>
       </div>
-
       <div className="gpt3__navbar-sign">
         <p>Sign in</p>
         <button type="button">Sign up</button>
@@ -70,5 +69,3 @@ function Navbar() {
     </div>
   );
 }
-
-export default Navbar;
