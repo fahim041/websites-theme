@@ -3,9 +3,9 @@ import {
   Footer,
   Blog,
   Possibility,
-  Features,
   WhatGPT3,
   Header,
+  Features,
 } from "./containers";
 
 import { Brand, Navbar, CTA } from "./components";
